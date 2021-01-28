@@ -1,0 +1,18 @@
+@button-oprator-prefix-cls: ~"ty-button-oprator";
+
+.@{button-oprator-prefix-cls}-container {
+  .@{button-oprator-prefix-cls} {
+    z-index: 10;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    > button:not(:first-child) {
+      margin-left: 8px;
+    }
+    .ivu-btn {
+      font-weight: bold;
+    }
+  }
+}

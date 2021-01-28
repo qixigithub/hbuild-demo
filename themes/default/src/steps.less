@@ -1,0 +1,152 @@
+@ty-steps-warp-cls: ~"ty-steps";
+//不同状态色值变量声明
+@ty-steps-bg-color-tail-process: #d75328;
+@ty-steps-bg-color-tail-wait: #fbf7e7;
+@ty-steps-bg-color-tail-finish: #faeee8;
+@ty-steps-bg-color-header-inner-process: #FFF;
+@ty-steps-bg-color-header-inner-wait: #FFF;
+@ty-steps-bg-color-header-inner-finish: #E84709;
+@ty-steps-color-header-span-process: #d75328;
+@ty-steps-color-header-span-wait: #f7b500;
+@ty-steps-color-header-span-finish: #FFF;
+@ty-steps-color-title-process: #FFF;
+@ty-steps-color-title-wait: #f7b500;
+@ty-steps-color-title-finish: #e84732;
+
+@ty-steps-line-height: 2.5;
+@ty-steps-item-height: 40px;
+
+.@{ty-steps-warp-cls} {
+  .@{steps-prefix-cls} {
+    &-item {
+      line-height: @ty-steps-line-height;
+      padding-left: 20px;
+      &.@{steps-prefix-cls}-status-process {
+        .@{steps-prefix-cls}-tail {
+          > i {
+            background-color: @ty-steps-bg-color-tail-process;
+            &:after {
+              border-left: 15px solid @ty-steps-bg-color-tail-process !important;
+            }
+          }
+        }
+        .@{steps-prefix-cls}-head-inner {
+          background: @ty-steps-bg-color-header-inner-process;
+          span {
+            color: @ty-steps-color-header-span-process !important;
+          }
+        }
+        .@{steps-prefix-cls}-title {
+          color: @ty-steps-color-title-process;
+        }
+      }
+      &.@{steps-prefix-cls}-status-wait {
+        .@{steps-prefix-cls}-tail {
+          > i {
+            background-color: @ty-steps-bg-color-tail-wait !important;
+            &:after {
+              border-left: 15px solid @ty-steps-bg-color-tail-wait !important;
+            }
+          }
+        }
+        .@{steps-prefix-cls}-head-inner {
+          background: @ty-steps-bg-color-header-inner-wait;
+          span {
+            color: @ty-steps-color-header-span-wait !important;
+          }
+        }
+        .@{steps-prefix-cls}-title {
+          color: @ty-steps-color-title-wait;
+        }
+      }
+      &.@{steps-prefix-cls}-status-finish {
+        .@{steps-prefix-cls}-tail {
+          > i {
+            background-color: @ty-steps-bg-color-tail-finish !important;
+            &:after {
+              border-left: 15px solid @ty-steps-bg-color-tail-finish !important;
+            }
+          }
+        }
+        .@{steps-prefix-cls}-head-inner {
+          background: @ty-steps-bg-color-header-inner-finish;
+          span {
+            font-weight: bold;
+            color: @ty-steps-color-header-span-finish !important;
+          }
+        }
+        .@{steps-prefix-cls}-title {
+          color: @ty-steps-color-title-finish;
+        }
+      }
+      &:not(:first-child) {
+        .@{steps-prefix-cls}-tail {
+          > i:before {
+            z-index: 2;
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 0px;
+            top: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 15px solid #FFF;
+          }
+        }
+      }
+      &:not(:last-child) {
+        .@{steps-prefix-cls}-tail {
+          > i:after {
+            z-index: 3;
+            content: "";
+            width: 0;
+            height: 0;
+            background: none;
+            position: absolute;
+            right: -15px;
+            top: 0;
+            opacity: 1;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 15px solid @ty-steps-bg-color-tail-wait;
+          }
+        }
+      }
+      &:last-child {
+        .@{steps-prefix-cls}-tail {
+          padding: 0;
+          display: block;
+          padding: 0;
+          > i {
+            &:after {
+              background-color: @ty-steps-bg-color-tail-finish !important;
+            }
+          }
+        }
+      }
+    }
+    .@{steps-prefix-cls}-tail {
+      top: 0px;
+      padding: 0 5px 0 0;
+      > i {
+        height: @ty-steps-item-height !important;
+      }
+    }
+    .@{steps-prefix-cls}-head-inner {
+      border: none !important;
+    }
+    .@{steps-prefix-cls}-head {
+      display: inline-block;
+      vertical-align: middle;
+      background-color: transparent;
+    }
+    .@{steps-prefix-cls}-title {
+      background-color: transparent;
+    }
+    .@{steps-prefix-cls}-main {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

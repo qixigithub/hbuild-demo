@@ -1,0 +1,19 @@
+{
+  "name": "page-core-xian-demo2-step1",
+  "version": "0.0.0",
+  "description": "Demo | Demo2Step1 | 第一步填写资料 | for vue.js",
+  "main": "./dist/index.js",
+  "keywords": [
+    "page-core-xian-demo2-step1",
+    "vue",
+    "component"
+  ],
+  "scripts": {
+      "dist:component":"cross-env NODE_ENV=production webpack --config ./config.js --progress --hide-modules"
+    },
+  "repository": "https://gitlab.tydicdev.com/DS/fe-base/vue-components-base/master/src/components/${componentname}",
+  "author": "杨波",
+  "license": "MIT",
+  "dependencies": {}
+}
+

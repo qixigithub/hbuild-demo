@@ -1,0 +1,43 @@
+.rebirthRadio {
+  margin-bottom: 16px;
+  .ivu-col-span-6 {
+    padding-left: 0 !important;
+    width: 164px;
+  }
+  .step {
+    height: 32px;
+    border: 2px solid #ccc;
+    text-align: center;
+    padding: 0px 10px;
+    position: relative;
+    cursor: pointer;
+    p {
+      color: rgb(153, 153, 153);
+      font-size: 12px;
+    }
+    .angle {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: none;
+    }
+    .right {
+      position: absolute;
+      right: 4px;
+      bottom: 4px;
+      display: none;
+    }
+  }
+  .active {
+    border: 2px solid rgb(68, 137, 220);
+    p {
+      color: rgba(68, 137, 220, 1);
+    }
+    .angle {
+      display: block;
+    }
+    .right {
+      display: block;
+    }
+  }
+}

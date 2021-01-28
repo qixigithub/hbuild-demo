@@ -1,0 +1,245 @@
+[
+  {
+    "name": "更新日志",
+    "path": "/changelog"
+  },
+  {
+    "name": "开发指南",
+    "children": [
+      {
+        "path": "/installation",
+        "name": "安装"
+      },
+      {
+        "path": "/quickstart",
+        "name": "快速上手"
+      }
+    ]
+  },
+  {
+    "name": "组件",
+    "groups": [
+      {
+        "groupName": "Demo",
+        "list": [
+          {
+            "path": "/demo",
+            "title": "demo 实例演示"
+          },
+          {
+            "path": "/demo-step2",
+            "title": "demo-step2 第二步上传附件"
+          },
+          {
+            "path": "/demo-step3",
+            "title": "demo-step3 第三步提交审核"
+          },
+          {
+            "path": "/demo-step4",
+            "title": "demo-step4 第四步审核完成"
+          },
+          {
+            "path": "/demo2-step1",
+            "title": "demo2-step1 第一步填写资料"
+          }
+        ]
+      },
+      {
+        "groupName": "Engine",
+        "list": [
+          {
+            "path": "/main",
+            "title": "main 渲染入口"
+          }
+        ]
+      },
+      {
+        "groupName": "Basic",
+        "list": [
+          {
+            "path": "/budongchan",
+            "title": "budongchan 不动产"
+          },
+          {
+            "path": "/button-oprator",
+            "title": "button-oprator 操作按钮组"
+          },
+          {
+            "path": "/button-switch",
+            "title": "button-switch 操作按钮"
+          },
+          {
+            "path": "/checkboxMultiple",
+            "title": "checkboxMultiple 多选框"
+          },
+          {
+            "path": "/content-element-lookup-fee",
+            "title": "content-element-lookup-fee 查看收费按钮组"
+          },
+          {
+            "path": "/endDateChoose",
+            "title": "endDateChoose 有效期"
+          },
+          {
+            "path": "/hello-world",
+            "title": "hello-world 你好"
+          },
+          {
+            "path": "/inputIDCard",
+            "title": "inputIDCard 身份证识别"
+          },
+          {
+            "path": "/iv-table",
+            "title": "iv-table 表格"
+          },
+          {
+            "path": "/lookup-query",
+            "title": "lookup-query 文件查询"
+          },
+          {
+            "path": "/multipleRadioSelection",
+            "title": "multipleRadioSelection 二维多选框"
+          },
+          {
+            "path": "/multipleSelection",
+            "title": "multipleSelection 多选框"
+          },
+          {
+            "path": "/print-comp",
+            "title": "print-comp 打印组件"
+          },
+          {
+            "path": "/scan-comp",
+            "title": "scan-comp 扫描组件"
+          },
+          {
+            "path": "/select-input",
+            "title": "select-input 文本下拉框"
+          }
+        ]
+      },
+      {
+        "groupName": "Container",
+        "list": [
+          {
+            "path": "/attach-file-table",
+            "title": "attach-file-table 附件上传表格"
+          },
+          {
+            "path": "/attachment",
+            "title": "attachment 附件信息"
+          },
+          {
+            "path": "/cell-item",
+            "title": "cell-item 信息展示单元格"
+          },
+          {
+            "path": "/cell-item-child",
+            "title": "cell-item-child 信息展示单元格"
+          },
+          {
+            "path": "/cells",
+            "title": "cells 信息展示组件"
+          },
+          {
+            "path": "/content-box",
+            "title": "content-box 内容盒子"
+          },
+          {
+            "path": "/content-box-item",
+            "title": "content-box-item 组件元素容器"
+          },
+          {
+            "path": "/content-element-tip-alert",
+            "title": "content-element-tip-alert 提示警告"
+          },
+          {
+            "path": "/content-element-title",
+            "title": "content-element-title 标题"
+          },
+          {
+            "path": "/extend-table",
+            "title": "extend-table 扩展表格"
+          },
+          {
+            "path": "/form-table",
+            "title": "form-table 自定义表格"
+          },
+          {
+            "path": "/mail-licence",
+            "title": "mail-licence 邮寄地址"
+          },
+          {
+            "path": "/pap-download-scan",
+            "title": "pap-download-scan 证照信息"
+          },
+          {
+            "path": "/steps",
+            "title": "steps 步骤组件"
+          },
+          {
+            "path": "/time-line",
+            "title": "time-line 时间线"
+          },
+          {
+            "path": "/uploads",
+            "title": "uploads 上传组件"
+          }
+        ]
+      },
+      {
+        "groupName": "Form",
+        "list": [
+          {
+            "path": "/content-element-form",
+            "title": "content-element-form 表单"
+          },
+          {
+            "path": "/content-element-form-item",
+            "title": "content-element-form-item 表单元素"
+          },
+          {
+            "path": "/content-element-iframe",
+            "title": "content-element-iframe 外嵌页面"
+          },
+          {
+            "path": "/content-element-lookup-map",
+            "title": "content-element-lookup-map 地图按钮"
+          },
+          {
+            "path": "/content-element-lookup-number",
+            "title": "content-element-lookup-number 编号查询按钮"
+          },
+          {
+            "path": "/content-element-lookup-project",
+            "title": "content-element-lookup-project 项目查询按钮"
+          },
+          {
+            "path": "/content-element-lookup-query",
+            "title": "content-element-lookup-query 208查询按钮"
+          },
+          {
+            "path": "/content-element-radio",
+            "title": "content-element-radio 表单单选"
+          },
+          {
+            "path": "/content-element-text-tpl",
+            "title": "content-element-text-tpl 备注信息联动"
+          },
+          {
+            "path": "/content-element-tip-adv",
+            "title": "content-element-tip-adv 广告提示"
+          },
+          {
+            "path": "/special-radio",
+            "title": "special-radio 自定义单选"
+          }
+        ]
+      },
+      {
+        "groupName": "Others",
+        "list": []
+      }
+    ]
+  }
+]

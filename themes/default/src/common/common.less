@@ -1,0 +1,134 @@
+/********总体布局相关信息***************/
+@screenWidth: 1220px;
+.ivu-btn:focus {
+  box-shadow: none !important;
+}
+
+.layout-inner {
+  margin: 0 auto;
+  width: 1200px;
+  flex-direction: row;
+}
+input {
+  font-size: 12.5px;
+}
+input::placeholder{
+  font-size:12.5px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tc {
+  text-align: center;
+}
+
+.fix {
+  position: fixed;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.ty-search-table-mix {
+  //margin-top: 20px;
+  .ivu-tabs-bar {
+    font-weight: bold;
+    border: none;
+  }
+  .ivu-tabs-tab {
+    color: #999999;
+    background-color: #E4E4E4;
+    width: 120px;
+    height: 40px !important;
+    text-align: center;
+    margin-right: 0 !important;
+  }
+  .ivu-tabs-nav-container {
+    overflow: visible;
+  }
+  .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-nav-container{
+    height: 40px;
+  }
+  > .ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active {
+    border-top: 2px solid #4572C1 !important;
+    color: #4572C1;
+  }
+  .ivu-tabs-nav-container:focus .ivu-tabs-tab-focused {
+    border-color: transparent !important;
+  }
+  .ivu-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  >div:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
+.content-box-no-crumb{
+  margin-top: 40px;
+  padding:32px 45px !important;
+}
+.content-box-register-height{
+  min-height:646px;
+}
+.spin-icon-load{
+  animation: ani-demo-spin 1s linear infinite;
+}
+//列表筛选条件样式
+.form-query{
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  padding: 10px 5px 10px 10px;
+  margin-bottom: 20px;
+  .ivu-form-item-label {
+    color: #000000;
+    font-size: 14px;
+    padding: 10px 0;
+    width: 70px;
+    text-align: right;
+  }
+  .ivu-form-item-content {
+    position: relative;
+    line-height: 32px;
+    font-size: 12px;
+    float: left;
+  }
+  .ivu-btn-reset {
+    border-color: #ed3f14;
+    color: #ed3f14;
+    background-color: #fff;
+  }
+  .ivu-btn-reset:hover {
+    color: #f16543;
+    background: hsla(11,85%,97%,.5);
+  }
+  .q-width {
+    width: 240px;
+  }
+  .q-button {
+    text-align: right;
+    margin-right: 50px;
+  }
+}
